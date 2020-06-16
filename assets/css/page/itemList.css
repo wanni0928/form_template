@@ -1,0 +1,11 @@
+.item-list, .item-list .container {height: 100%; display: flex; justify-content: start; flex-wrap: wrap;}
+.item-list .demo-card-square {max-width: 280px; max-height: 340px; order: 4; margin: 10px;}
+.item-list .demo-card-square a {height: 100%;}
+.item-list .mdl-card__supporting-text {padding-bottom: 16px; padding-top: 0;}
+.custom .item-list .mdl-button {width: auto;}
+.item-list .mdl-card--expand {height: 181px; padding-bottom: 0px;}
+.item-list .item-price {padding-left: 16px; padding-bottom: 8px;display: inline-block;}
+.item-owner {display: block; padding-left: 16px;}
+.item-list .material-icons {vertical-align: middle;}
+
+.item-list .demo-card-square.mdl-card.w100 {width:100%; max-width: none;}

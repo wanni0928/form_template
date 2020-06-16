@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* *******************************************************
+ * filename : form.css
+ * description : 폼 관련 css
+ * date : 2020-06-15
+******************************************************** */
+.custom-form .mdl-textfield {display: block;}
+.custom .page-content h2{
+    text-align: center;
+}
+
+.custom .page-content button {width: 100%;}
+
+.custom form fieldset .mdl-textfield {width: 100%;}
+
+.custom .mdl-radio:not(:first-child) {margin-left: 6px;}

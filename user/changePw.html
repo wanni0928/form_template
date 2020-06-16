@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../assets/css/lib/material.min.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <script defer src="../assets/js/lib/material.min.js"></script>
+</head>
+<body>
+    <div class="custom" id="wrap">
+        <!--Material Design Lite -warterfall layout start--->
+        <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+            <!--header start-->
+            <header class="mdl-layout__header mdl-layout__header--waterfall">
+              <!-- Top row, always visible -->
+              <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Title</span>
+                <div class="mdl-layout-spacer"></div>
+                <!--search-->
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                            mdl-textfield--floating-label mdl-textfield--align-right">
+                    <form action="./test.html" method="get">
+                        <fieldset>
+                            <label class="mdl-button mdl-js-button mdl-button--icon"
+                                    for="waterfall-exp">
+                                <i class="material-icons">search</i>
+                            </label>
+                            <div class="mdl-textfield__expandable-holder">
+                                <input class="mdl-textfield__input" type="text" name="sample"
+                                    id="waterfall-exp">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <!--user-->
+                <div class="user-tool">
+                    <!-- <button class="mdl-button mdl-js-button mdl-button--icon">
+                        <i class="material-icons">person</i>
+                    </button> -->
+                    <button id="demo-menu-lower-right"
+                            class="mdl-button mdl-js-button mdl-button--icon">
+                        <i class="material-icons">person</i>
+                    </button>
+
+                    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                        for="demo-menu-lower-right">
+                        <li class="mdl-menu__item">
+                            <a href="./loginForm.html">
+                                Log In
+                            </a>
+                        </li>
+                        <li class="mdl-menu__item">
+                            <a href="./joinForm.html">
+                                Join
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            </header>
+            <!-- header drawer layout start -->
+            <div class="mdl-layout__drawer">
+              <span class="mdl-layout-title">Title</span>
+              <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Buy</a>
+                <a class="mdl-navigation__link" href="">Sell</a>
+                <a class="mdl-navigation__link" href="">Charge</a>
+              </nav>
+            </div>
+            <!-- header drawer layout end -->
+            <!--header end-->
+
+             <!-- main start -->
+            <main class="mdl-layout__content custom">
+                <div class="page-content">
+                    <div class="container">
+                        <h2>Change Password</h2>
+                        <form class="custom-form" action="./test.html" method="GET">
+                            <fieldset>
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="password" id="jsInputAccount" name="pw_1">
+                                    <label class="mdl-textfield__label" for="jsInputAccount">current password...</label>
+                                </div>
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="password" id="jsInputAccount" name="pw_2">
+                                    <label class="mdl-textfield__label" for="jsInputAccount">new password...</label>
+                                </div>
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="password" id="jsInputAccount" name="pw_3">
+                                    <label class="mdl-textfield__label" for="jsInputAccount">confirm new password...</label>
+                                </div>
+
+                                <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                                    Confirm
+                                </button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </main>
+            <!-- main end -->
+
+            <!-- footer start -->
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">Title</div>
+                    <ul class="mdl-mini-footer__link-list">
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Privacy & Terms</a></li>
+                    </ul>
+                </div>
+            </footer>
+            <!-- footer end -->
+          </div>
+          <!--Material Design Lite -warterfall layout end--->
+    </div>
+</body>
+</html>

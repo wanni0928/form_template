@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="../assets/css/lib/material.min.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <script defer src="../assets/js/lib/material.min.js"></script>
+</head>
+<body>
+    <div class="custom" id="wrap">
+        <!--Material Design Lite -warterfall layout start--->
+        <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+            <!--header start-->
+            <header class="mdl-layout__header mdl-layout__header--waterfall">
+              <!-- Top row, always visible -->
+              <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Title</span>
+                <div class="mdl-layout-spacer"></div>
+                <!--search-->
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                            mdl-textfield--floating-label mdl-textfield--align-right">
+                    <form action="./test.html" method="get">
+                        <fieldset>
+                            <label class="mdl-button mdl-js-button mdl-button--icon"
+                                    for="waterfall-exp">
+                                <i class="material-icons">search</i>
+                            </label>
+                            <div class="mdl-textfield__expandable-holder">
+                                <input class="mdl-textfield__input" type="text" name="sample"
+                                    id="waterfall-exp">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <!--user-->
+                <div class="user-tool">
+                    <!-- <button class="mdl-button mdl-js-button mdl-button--icon">
+                        <i class="material-icons">person</i>
+                    </button> -->
+                    <button id="demo-menu-lower-right"
+                            class="mdl-button mdl-js-button mdl-button--icon">
+                        <i class="material-icons">person</i>
+                    </button>
+
+                    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                        for="demo-menu-lower-right">
+                        <li class="mdl-menu__item">
+                            <a href="./loginForm.html">
+                                Log In
+                            </a>
+                        </li>
+                        <li class="mdl-menu__item">
+                            <a href="./joinForm.html">
+                                Join
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            </header>
+            <!-- header drawer layout start -->
+            <div class="mdl-layout__drawer">
+              <span class="mdl-layout-title">Title</span>
+              <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Buy</a>
+                <a class="mdl-navigation__link" href="">Sell</a>
+                <a class="mdl-navigation__link" href="">Charge</a>
+              </nav>
+            </div>
+            <!-- header drawer layout end -->
+            <!--header end-->
+
+            <!-- main start -->
+            <main class="mdl-layout__content custom">
+                <div class="page-content">
+                    <div class="container">
+                        <!-- <h2>User Profile</h2> -->
+                        <!--profile card start-->
+                        <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                            <div class="avartar-container">
+                                <img src="../assets/imgs/profile_test.jpg" alt="">
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                email
+                            </div>
+                            <div class="mdl-card__title mdl-card--expand">
+                              <h2 class="mdl-card__title-text">qwert1234@gmail.com</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                nickname
+                            </div>
+                            <div class="mdl-card__title mdl-card--expand">
+                              <h2 class="mdl-card__title-text">qqwwwee</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                public
+                            </div>
+                            <!--public radio start-->
+                            <div class="mdl-card__title mdl-card--expand">
+                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                                    <input type="radio" id="option-1" class="mdl-radio__button" name="public" value="true" checked>
+                                    <span class="mdl-radio__label">public</span>
+                                </label>
+                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                                    <input type="radio" id="option-2" class="mdl-radio__button" name="public" value="false">
+                                    <span class="mdl-radio__label">private</span>
+                                </label>
+                            </div>
+                            <!--public radio end-->
+                            <div class="mdl-card__actions mdl-card--border">
+                              <a href="./editUser.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                Edit Profile
+                              </a>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a href="../review/reviewCoupon.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    Evaluate
+                                </a>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a href="./editUser.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    Secession
+                                </a>
+                            </div>
+                        </div>
+                        <!--profile card end-->
+
+                        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                            
+                            <div class="mdl-tabs__tab-bar">
+                                <a href="#Coupon" class="mdl-tabs__tab is-active">Coupon</a>
+                                <a href="#Comments" class="mdl-tabs__tab">Comments</a>
+                                <a href="#History" class="mdl-tabs__tab">History</a>
+                                <a href="#Favorite" class="mdl-tabs__tab">Favorite</a>
+                            </div>
+                          
+                            <div class="mdl-tabs__panel is-active" id="Coupon">
+                              <ul class="demo-list-icon mdl-list">
+                                <li class="mdl-list__item">
+                                    <a href="">
+                                        <span class="mdl-list__item-primary-content">
+                                            <i class="material-icons mdl-list__item-icon">request_quote</i>
+                                            Coupon1
+                                        </span>
+                                    </a>
+                                    <span class="mdl-list__item-secondary-content">
+                                        <!-- Right aligned menu below button -->
+                                        <button id="coupon-lower-right"
+                                        class="mdl-button mdl-js-button mdl-button--icon">
+                                            <i class="material-icons">more_vert</i>
+                                        </button>
+
+                                        <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect"
+                                        for="coupon-lower-right">
+                                            <li class="mdl-menu__item">
+                                                <a href="">use</a>
+                                            </li>
+                                            <li class="mdl-menu__item">
+                                                <a href="">cancle</a>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </li>
+                            
+                              </ul>
+                            </div>
+                            <div class="mdl-tabs__panel" id="Comments">
+                                <ul class="demo-list-three mdl-list">
+                                    <li class="mdl-list__item mdl-list__item--three-line">
+                                        <span class="mdl-list__item-primary-content">
+                                            <a href="">
+                                                <i class="material-icons mdl-list__item-avatar">person</i>
+                                                <span>qqwwwee</span>
+                                                <span class="mdl-list__item-text-body">
+                                                    Bryan Cranston played the role of Walter in Breaking Bad. He is also known
+                                                    for playing Hal in Malcom in the Middle.
+                                                </span>
+                                            </a>
+                                        </span>
+                                        <span class="mdl-list__item-secondary-content">
+                                            <!-- Right aligned menu below button -->
+                                            <button id="comment-lower-right"
+                                            class="mdl-button mdl-js-button mdl-button--icon">
+                                                <i class="material-icons">more_vert</i>
+                                            </button>
+
+                                            <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect"
+                                            for="comment-lower-right">
+                                                <li class="mdl-menu__item">
+                                                    <a href="">delete</a>
+                                                </li>
+                                                <li class="mdl-menu__item">
+                                                    <a href="">edit</a>
+                                                </li>
+                                            </ul>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mdl-tabs__panel" id="History">
+                                <ul class="demo-list-icon mdl-list">
+                                    <li class="mdl-list__item">
+                                        <a href="">
+                                            <span class="mdl-list__item-primary-content">
+                                                <i class="material-icons mdl-list__item-icon">request_quote</i>
+                                                Test Coupon1
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="mdl-list__item">
+                                        <a href="">
+                                            <span class="mdl-list__item-primary-content">
+                                                <i class="material-icons mdl-list__item-icon">request_quote</i>
+                                                Test Coupon2
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="mdl-list__item">
+                                        <a href="">
+                                            <span class="mdl-list__item-primary-content">
+                                                <i class="material-icons mdl-list__item-icon">request_quote</i>
+                                                Test Coupon3
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mdl-tabs__panel" id="Favorite">
+                                <ul class="demo-list-icon mdl-list">
+                                    <li class="mdl-list__item">
+                                        <a href="">
+                                            <span class="mdl-list__item-primary-content">
+                                                <i class="material-icons mdl-list__item-icon">request_quote</i>
+                                                Coupon1
+                                            </span>
+                                        </a>
+                                        <span class="mdl-list__item-secondary-content">
+                                            <!-- Right aligned menu below button -->
+                                            <button id="favorite-lower-right"
+                                            class="mdl-button mdl-js-button mdl-button--icon">
+                                                <i class="material-icons">star</i>
+                                            </button>
+    
+                                            <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect"
+                                            for="favorite-lower-right">
+                                                <li class="mdl-menu__item">
+                                                    <a href="">cancle</a>
+                                                </li>
+                                            </ul>
+                                        </span>
+                                    </li>
+                                  </ul>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- main end -->
+
+            <!-- footer start -->
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">Title</div>
+                    <ul class="mdl-mini-footer__link-list">
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Privacy & Terms</a></li>
+                    </ul>
+                </div>
+            </footer>
+            <!-- footer end -->
+          </div>
+          <!--Material Design Lite -warterfall layout end--->
+    </div>
+</body>
+</html>
